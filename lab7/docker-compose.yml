@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  ssh:
+    container_name: ssh
+    image: rastasheep/ubuntu-sshd
+    ports:
+      - "2222:22"
+    volumes:
+      - ./home:/home

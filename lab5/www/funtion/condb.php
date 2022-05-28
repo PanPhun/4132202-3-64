@@ -3,7 +3,7 @@
 $host = "mysql";
 $user = "root";
 $pass = "1234";
-$db = "DB_TEST";
+$db = "db_test";
 
 try{
     $mysqli = new mysqli($host,$user,$pass,$db);
