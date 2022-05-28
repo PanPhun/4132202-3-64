@@ -7,11 +7,27 @@
     <title>Document</title>
 </head>
 <body>
+    <div>
+        <button id="btn_manu_add">+ ADD</button>
+        <button id="btn_manu_data">DATA</button>
+        <button id="btn_manu_edit">EDIT</button>
+    </div>
     <div id="div_dt"></div>
 </body>
 </html>
 
 <script src="./js/jquery-3.6.0.min.js"></script>
 <script>
-    $("#div_dt").load("./query/dt_member.php");
+    $("#btn_manu_data").click(function () {
+        $("#div_dt").load("./query/dt_member.php");
+    });
+
+    $("#btn_manu_add").click(function () {
+        $("#div_dt").load("./form/add_member.php");
+    });
+
+    $("#btn_manu_edit").click(function () {
+        $("#div_dt").load("./form/edit_member.php");
+    });
+
 </script>
